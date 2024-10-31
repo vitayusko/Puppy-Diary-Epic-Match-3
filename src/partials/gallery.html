@@ -1,4 +1,50 @@
 <div class="gallery-container">
-  <h2 class="title">Gallery</h2>
-  <div class="gallery-wrapper"></div>
+  <div class="title-wrapper">
+    <svg class="line" width="103" height="4">
+      <use href="../img/line.svg"></use>
+    </svg>
+    <h2 class="title">Gallery</h2>
+    <svg class="line" width="103" height="4">
+      <use href="../img/line.svg"></use>
+    </svg>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <img
+            class="gallery-image"
+            srcset="
+              ../img/gallery/variant-4.png    1x,
+              ../img/gallery/variant-4@2x.png 2x
+            "
+            src="../img/gallery/variant-4.png"
+            alt="Gallery image variant 4"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture
+          ><img
+            class="gallery-image"
+            srcset="
+              ../img/gallery/variant-3.png    1x,
+              ../img/gallery/variant-3@2x.png 2x
+            "
+            src="../img/gallery/variant-3.png"
+            alt="Gallery image variant 3"
+            loading="lazy"
+        /></picture>
+      </div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 </div>
