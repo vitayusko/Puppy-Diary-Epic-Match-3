@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 32px;
+  /* font-weight: 700; */
+  background: linear-gradient(90deg, #de728d 19.01%, #f7986a 80.99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
