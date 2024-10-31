@@ -14,14 +14,28 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+body,
+main {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 h2 {
   font-family: Poppins;
-  font-size: 48px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
+}
+
+p,
+h1,
+h2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 48px;
+  }
 }
