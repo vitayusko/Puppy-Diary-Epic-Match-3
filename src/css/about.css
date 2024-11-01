@@ -1,0 +1,102 @@
+.about-container {
+  color: #000;
+  font-family: Nunito;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 64px;
+  span {
+    background: linear-gradient(90deg, #dd708d -0.7%, #fb9f62 37.88%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 22.5px */
+  }
+}
+
+.about-title-wrapper {
+  position: relative;
+  margin-bottom: 32px;
+  h2 {
+    background: linear-gradient(90deg, #dd708d 6.59%, #fb9f62 93.44%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  img {
+    position: absolute;
+  }
+  span {
+    display: none;
+  }
+}
+.about-vector-mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  z-index: -1;
+}
+.about-vector-dt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1196px;
+  z-index: -1;
+}
+
+.about-vector-dt {
+  display: none;
+}
+
+.about-vector-mobile {
+  display: block;
+}
+
+/* Стили для десктопной версии (от 1200px и больше) */
+@media only screen and (min-width: 1200px) {
+  .about-container {
+    margin-bottom: 80px;
+    font-size: 24px;
+    span {
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+
+  .about-title-wrapper {
+    position: relative;
+    margin-bottom: 56px;
+    h2 {
+      background: linear-gradient(90deg, #dd708d 6.59%, #fb9f62 93.44%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    img {
+      position: absolute;
+    }
+    span {
+      display: contents;
+      font-size: 48px;
+      font-weight: 700;
+    }
+  }
+
+  .about-vector-mobile {
+    display: none;
+  }
+  .about-vector-dt {
+    position: absolute;
+    display: block;
+  }
+}
