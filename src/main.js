@@ -1,8 +1,8 @@
 // Swiper
 var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   centeredSlides: true,
-  spaceBetween: 24,
+  initialSlide: 3,
   grabCursor: true,
   pagination: {
     el: '.swiper-pagination',
