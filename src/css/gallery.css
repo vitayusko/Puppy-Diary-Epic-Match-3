@@ -18,6 +18,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .line {
@@ -29,7 +31,7 @@
 
 .swiper.mySwiper {
   width: 320px;
-  height: 380px;
+  height: 335px;
   overflow: hidden;
 }
 
