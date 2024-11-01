@@ -1,0 +1,91 @@
+.hero-container {
+  padding: 54px 10px;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  h2 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(90deg, #dd708d 13.83%, #fb9f62 91.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 10px;
+  }
+  p {
+    color: #000;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 10px;
+  }
+}
+
+.header-mob-btn-download {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  padding: 5px 10px 5px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background: #fff;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background 0.3s;
+  color: #000;
+  font-family: PT Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  /* Центрирование кнопки по горизонтали и вертикали */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .btn-download-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Стили для десктопной версии (от 1200px и больше) */
+@media only screen and (min-width: 1200px) {
+  .hero-container {
+    padding: 82px 0;
+  }
+
+  .info-wrapper {
+    h2 {
+      font-size: 48px;
+    }
+    p {
+      font-size: 24px;
+      width: 509px;
+    }
+    margin-bottom: 28px;
+  }
+}
