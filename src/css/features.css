@@ -1,0 +1,148 @@
+.features-tittle-wrapper {
+  margin-bottom: 32px;
+  position: relative;
+  h2 {
+    color: #db8421;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.features-list-item {
+  width: 300px;
+  border-radius: 15px;
+  border: none;
+  border: 1px solid #db8421;
+  background: #db8421;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 16px;
+
+  span {
+    font-family: Poppins;
+    font-weight: 600;
+  }
+}
+
+.features-vector-mobile-left {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  z-index: -1;
+}
+.features-vector-dt-left {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  width: 418px;
+  z-index: -1;
+}
+.features-vector-dt-right {
+  position: absolute;
+  top: 50%;
+  right: -20%;
+  transform: translate(-50%, -50%);
+  width: 418px;
+  z-index: -1;
+}
+
+.features-vector-dt-left {
+  display: none;
+}
+.features-vector-dt-right {
+  display: none;
+}
+
+.features-vector-mobile-left {
+  display: block;
+}
+
+.features-img {
+  position: absolute;
+  top: -15px;
+  transform: translate(365%);
+  transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+}
+
+/* Стили для десктопной версии (от 1200px и больше) */
+@media only screen and (min-width: 1200px) {
+  .features-tittle-wrapper {
+    margin-bottom: 56px;
+    h2 {
+      font-size: 48px;
+    }
+  }
+
+  .features-vector-dt-right {
+    display: block;
+  }
+  .features-vector-dt-left {
+    display: block;
+  }
+
+  .features-vector-mobile-left {
+    display: none;
+  }
+
+  .features-img {
+    height: 115px;
+    width: 120px;
+    position: absolute;
+    top: -20px;
+    transform: translate(635%);
+    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+  }
+
+  .features-img:hover {
+    transform: translate(625%) scale(1.1);
+    top: -10px;
+  }
+
+  .features-list-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .features-list {
+    display: flex;
+    gap: 50px;
+    animation: scroll 10s linear infinite alternate;
+  }
+
+  .features-list-item {
+    width: 451px;
+
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+  /* Анимация маятника */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Начальная позиция */
+    }
+    100% {
+      transform: translateX(-100%); /* Прокрутка до конца */
+    }
+  }
+}
