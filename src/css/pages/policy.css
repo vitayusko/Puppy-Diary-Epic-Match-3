@@ -67,11 +67,16 @@
 
 @media screen and (min-width: 1200px) {
   .link-wrapper {
-    margin: 16px 0 12px 10px;
+    margin: 16px 0 6px;
+  }
+
+  .go-home-link {
+    font-size: 24px;
+    font-weight: 600;
   }
 
   .policy-container {
-    padding: 26px 169px 82px 169px;
+    padding: 12px 169px 82px 169px;
   }
 
   .mobile-line-header {
@@ -81,5 +86,17 @@
   .desktop-line-header {
     display: block;
     margin-top: 84px;
+  }
+
+  .regular-text.privacy-text {
+    margin: 16px 0 24px;
+  }
+
+  .bold-text.privacy-text {
+    margin: 24px 0 16px;
+  }
+  .bold-text,
+  .regular-text {
+    font-size: 24px;
   }
 }
