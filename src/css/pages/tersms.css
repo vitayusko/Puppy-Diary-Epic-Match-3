@@ -1,0 +1,153 @@
+.terms {
+}
+.terms-container {
+  padding: 64px 8px;
+  h2 {
+    font-family: Poppins;
+    text-align: left;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: var(
+      --Title-ALL,
+      linear-gradient(90deg, #df748c 7.93%, #f6976c 93.29%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+  }
+  p {
+    color: #000;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+  }
+}
+
+.goHome-dt {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.goHome-dt {
+  display: none;
+}
+.go-home-icon {
+  stroke: #000;
+  width: 16px;
+  height: 18px;
+}
+
+.terms-main-info-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  h4 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+  }
+  p {
+    color: #000;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+  }
+}
+.terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  h4 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+  }
+}
+.terms-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.terms-list-item-inside-list {
+  list-style-type: disc;
+}
+
+.terms-list-item-inside-list-item {
+  margin-left: 20px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+/* Стили для десктопной версии (от 1200px и больше) */
+@media only screen and (min-width: 1200px) {
+  .terms-container {
+    padding: 28px 169px 82px 169px;
+    h2 {
+      font-size: 48px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .goHome-dt {
+    display: block;
+  }
+
+  .terms-main-info-wrapper {
+    margin-bottom: 16px;
+    gap: 16px;
+    h4 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  .terms-list {
+    gap: 24px;
+    h4 {
+      font-size: 24px;
+    }
+  }
+  .terms-list-item {
+    gap: 16px;
+  }
+
+  .terms-list-item-inside-list-item {
+    font-size: 24px;
+  }
+}
