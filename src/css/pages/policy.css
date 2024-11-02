@@ -1,0 +1,10 @@
+.policy-container {
+  margin-bottom: 64px;
+}
+
+.main-title {
+  background: linear-gradient(90deg, #df748c 7.93%, #f6976c 93.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
