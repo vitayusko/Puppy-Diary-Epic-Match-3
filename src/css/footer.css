@@ -20,15 +20,15 @@
 }
 
 .img-footer-mobile {
-  position: absolute; /* Абсолютное позиционирование */
-  top: 0; /* Устанавливаем в верхнюю часть футера */
-  left: 50%; /* Центрируем по горизонтали */
+  position: absolute;
+  top: 0;
+  left: 50%;
   transform: translateX(-50%);
 }
 .img-footer-dt {
-  position: absolute; /* Абсолютное позиционирование */
-  top: 0; /* Устанавливаем в верхнюю часть футера */
-  left: 50%; /* Центрируем по горизонтали */
+  position: absolute;
+  top: 0;
+  left: 50%;
   transform: translateX(-50%);
 }
 
