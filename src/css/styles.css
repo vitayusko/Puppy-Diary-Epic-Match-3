@@ -19,3 +19,8 @@
 @import url('./features.css');
 
 @import url('./footer.css');
+
+/* pages-styles */
+
+@import url('./pages/tersms.css');
+@import url('./headerPages.css');
