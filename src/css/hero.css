@@ -55,9 +55,9 @@
   text-transform: uppercase;
   /* Центрирование кнопки по горизонтали и вертикали */
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 180px;
+  /* left: 50%; */
+  /* transform: translate(-50%, -500%); */
   z-index: 10; /* Устанавливаем z-index на 10 для слоя кнопки */
 
   .btn-download-wrapper {
@@ -278,13 +278,14 @@
 
   /* анимация */
   .img-container-hero {
-    position: relative;
+    position: absolute;
     width: 357px;
     height: 309px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: visible;
+    top: 50px;
   }
 
   .img-hero-girl-black-wrapper,
@@ -419,49 +420,4 @@
       width: 330px;
     }
   }
-
-  /* Применяем тень и размеры для нужных элементов напрямую */
-  /* .grid-img-wrapper-1 img,
-  .grid-img-wrapper-5 img {
-    width: 330px;
-    height: 55px;
-    border-radius: 10px;
-    box-shadow: -3px 6px 10px 0 rgba(0, 0, 0, 0.8);
-  }
-
-  .grid-img-wrapper-2 img,
-  .grid-img-wrapper-3 img,
-  .grid-img-wrapper-4 img {
-    width: 253px;
-    height: 55px;
-    border-radius: 10px;
-  }
-
-  .grid-img-wrapper-2 .grid-img-bg-3,
-  .grid-img-wrapper-3 .grid-img-bg-7,
-  .grid-img-wrapper-3 .grid-img-bg-8 {
-    box-shadow: -3px 6px 10px 0 rgba(0, 0, 0, 0.8);
-  }
-
-  .grid-img-wrapper-2 .grid-img-bg-3 {
-    width: 84px;
-  }
-
-  .grid-img-wrapper-2 .grid-img-bg-4 {
-    width: 84px;
-    margin-right: 32px;
-  }
-
-  .grid-img-wrapper-2 .grid-img-bg-5 {
-    width: 120px;
-  }
-
-  .grid-img-wrapper-3 .grid-img-bg-7 {
-    margin-right: 32px;
-  }
-
-  .grid-img-wrapper-4 .grid-img-bg-10,
-  .grid-img-wrapper-4 .grid-img-bg-13 {
-    display: none;
-  } */
 }
