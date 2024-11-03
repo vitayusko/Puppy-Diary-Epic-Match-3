@@ -11,16 +11,28 @@
     line-height: normal;
   }
 }
-
+.features-list-wrapper {
+  overflow: hidden;
+}
 .features-list {
   display: flex;
   flex-direction: row;
   gap: 16px;
   margin-bottom: 64px;
+  animation: scroll 10s linear infinite alternate;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(30px); /* Начальная позиция */
+  }
+  100% {
+    transform: translateX(-115%); /* Прокрутка до конца */
+  }
 }
 
 .features-list-item {
   width: 300px;
+  flex-shrink: 0;
   border-radius: 15px;
   border: none;
   border: 1px solid #db8421;
@@ -132,17 +144,18 @@
     width: 451px;
 
     flex-shrink: 0;
-    white-space: nowrap;
+    white-space: wrap;
     font-size: 16px;
+    box-shadow: -12px 7px 24px 0 rgba(219, 132, 33, 0.487);
   }
 
   /* Анимация маятника */
   @keyframes scroll {
     0% {
-      transform: translateX(0); /* Начальная позиция */
+      transform: translateX(30px); /* Начальная позиция */
     }
     100% {
-      transform: translateX(-100%); /* Прокрутка до конца */
+      transform: translateX(-115%); /* Прокрутка до конца */
     }
   }
 }
