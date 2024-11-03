@@ -1,0 +1,25 @@
+.howToPlay-title {
+  background: linear-gradient(90deg, #d76796 0%, #fb9f62 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.instructions-container {
+  display: flex;
+}
+
+/* .instruction-wrapper {
+
+&:hover,
+&:focus {
+
+}
+} */
+
+/* .circle-number {
+
+}
+
+.instruction-text {
+
+} */
