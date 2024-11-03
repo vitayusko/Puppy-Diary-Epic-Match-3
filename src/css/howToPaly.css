@@ -4,10 +4,14 @@
   -webkit-background-clip: text;
 }
 
-/* .instructions-container {
-  display: flex;
+.instructions-container {
+  display: inline-flex;
   gap: 38px;
-} */
+  height: 160px;
+  /* width: 320px;
+  overflow-x: hidden;
+  overflow-y: visible; */
+}
 
 .instruction-wrapper {
   position: relative;
@@ -85,7 +89,34 @@ align-items: center;
   padding: 13px 20px;
 }
 
+.arrow-wrapper {
+display: flex;
+justify-content: space-between;
+width: 192px;
+margin: 0 auto 64px;
+}
+
+.arrow-button {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.arrow {
+  width: 30px;
+  height: 26px;
+}
+
+.arrow-button:hover .arrow {
+  transform: scale(1.1);
+}
+
+
 /* @media screen and (min-width: 1200px) {
+.arrow-wrapper {
+display: none;
+}
+
   .instruction-text {
     color: #fff;
     font-family: Nunito;
