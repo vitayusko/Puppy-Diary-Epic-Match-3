@@ -1,5 +1,6 @@
 .hero-container {
   padding: 54px 10px;
+  overflow: hidden;
 }
 
 .info-wrapper {
@@ -30,11 +31,6 @@
     line-height: normal;
     padding: 0 10px;
   }
-}
-
-.img-hero-girl-collor {
-  width: 300px;
-  height: 258px;
 }
 
 .header-mob-btn-download {
@@ -99,9 +95,17 @@
 .img-hero-girl-black-wrapper {
   display: none;
 }
+.img-hero-btf2-collor {
+  display: none;
+}
+.img-hero-btf1-collor {
+  display: none;
+}
 
 /* сетка */
-.img-wrapper {
+/* .img-wrapper {
+  padding: 22px 0 108px 0;
+  overflow: visible;
 }
 .img-grid {
   display: flex;
@@ -187,7 +191,105 @@
     border-radius: 5px;
     box-shadow: -3px 6px 10px 0px rgba(0, 0, 0, 0.8);
   }
+} */
+
+.img-wrapper {
 }
+
+.img-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  overflow: hidden;
+  padding: 22px 0 108px;
+  overflow: visible;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-common {
+  height: 20px;
+  border-radius: 5px;
+}
+
+.img-shadow {
+  box-shadow: -3px 6px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.grid-img-wrapper-1,
+.grid-img-wrapper-2,
+.grid-img-wrapper-3,
+.grid-img-wrapper-4,
+.grid-img-wrapper-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.grid-img-wrapper-1 {
+  gap: 20px;
+}
+.grid-img-wrapper-2 {
+  transform: translateX(-40px);
+}
+
+.grid-img-wrapper-4 {
+  gap: 132px;
+}
+
+.grid-img-wrapper-5 {
+  gap: 24px;
+}
+
+/* Применяем тень и размеры для нужных элементов напрямую */
+.grid-img-wrapper-1 img,
+.grid-img-wrapper-5 img {
+  width: 138px;
+  height: 20px;
+  border-radius: 5px;
+  box-shadow: -3px 6px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.grid-img-wrapper-2 img,
+.grid-img-wrapper-3 img,
+.grid-img-wrapper-4 img {
+  width: 84px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.grid-img-wrapper-2 .grid-img-bg-3,
+.grid-img-wrapper-3 .grid-img-bg-7,
+.grid-img-wrapper-3 .grid-img-bg-8 {
+  box-shadow: -3px 6px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.grid-img-wrapper-2 .grid-img-bg-3 {
+  width: 84px;
+}
+
+.grid-img-wrapper-2 .grid-img-bg-4 {
+  width: 84px;
+  margin-right: 32px;
+}
+
+.grid-img-wrapper-2 .grid-img-bg-5 {
+  width: 120px;
+}
+
+.grid-img-wrapper-3 .grid-img-bg-7 {
+  margin-right: 32px;
+}
+
+.grid-img-wrapper-4 .grid-img-bg-10,
+.grid-img-wrapper-4 .grid-img-bg-13 {
+  display: none;
+}
+
 /* Стили для десктопной версии (от 1200px и больше) */
 @media only screen and (min-width: 1200px) {
   .hero-container {
