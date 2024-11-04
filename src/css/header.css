@@ -85,6 +85,7 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
 }
 
 .mobile-menu-overlay {
@@ -94,7 +95,6 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 20px 0;
   overflow: auto;
 }
 
@@ -119,7 +119,8 @@
 .mob-menu-text {
   font-size: 15px;
   font-style: normal;
-  font-weight: 500;
+  font-family: Poppins;
+  font-weight: 600;
   line-height: normal;
   background: linear-gradient(90deg, #dd708d 13.83%, #fb9f62 91.5%);
   background-clip: text;
