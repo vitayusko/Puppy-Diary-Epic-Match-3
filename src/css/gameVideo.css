@@ -1,3 +1,9 @@
+.gameVideo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .gameVideo-container .title-wrapper {
   width: 316px;
 }
@@ -11,4 +17,27 @@
 
 .gameVideo-container .title-wrapper svg {
   flex-shrink: unset;
+}
+
+.gameVideo-container .regular-text {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .gameVideo-container .title-wrapper svg {
+    flex-shrink: 0;
+    margin: 0 -35px;
+  }
+
+  .gameVideo-container .regular-text {
+    margin: 0 155px;
+  }
+
+  .span-gameVideo {
+    color: #fbbc04;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+  }
 }
