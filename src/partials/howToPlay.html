@@ -161,12 +161,15 @@
   let currentIndex = 0;
 
   function updateView() {
-    instructions.forEach((el, i) => {
-      el.style.display = i === currentIndex ? 'block' : 'none';
-    });
-
-    document.querySelector('.prev').disabled = currentIndex === 0;
-    document.querySelector('.next').disabled = currentIndex === instructions.length - 1;
+    if (window.innerWidth >= 1200) {
+      instructions.forEach((el) => (el.style.display = 'block'));
+    } else {
+      instructions.forEach((el, i) => {
+        el.style.display = i === currentIndex ? 'block' : 'none';
+      });
+      document.querySelector('.prev').disabled = currentIndex === 0;
+      document.querySelector('.next').disabled = currentIndex === instructions.length - 1;
+    }
   }
 
   function showPrevious() {
@@ -182,6 +185,8 @@
       updateView();
     }
   }
+
+  window.addEventListener('resize', updateView);
   
   updateView();
 </script>
