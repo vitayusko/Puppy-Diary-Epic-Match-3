@@ -6,73 +6,63 @@
 
 .instructions-container {
   display: inline-flex;
-  gap: 38px;
-  height: 160px;
-  /* width: 320px;
-  overflow-x: hidden;
-  overflow-y: visible; */
+  align-items: center;
 }
 
-.instruction-wrapper {
+.instructions-container .instruction-wrapper {
+  display: none;
   position: relative;
-  width: 280px;
-  height: 115px;
-  padding: 10px;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-bottom: 24px;
   border-radius: 15px;
+  color: #fff;
 
-  &:nth-child(1) { 
+  &:nth-child(1) {
     border: 1px solid #66a5d3;
     background-color: #66a5d3;
     box-shadow: -12px 7px 24px 0px rgba(102, 165, 211, 0.5);
   }
 
   &:nth-child(2) {
-border: 1.5px solid #FB9F62;
-background: #FB9F62;
-box-shadow: -12px 7px 24px 0px rgba(251, 159, 98, 0.80);
+    border: 1.5px solid #fb9f62;
+    background: #fb9f62;
+    box-shadow: -12px 7px 24px 0px rgba(251, 159, 98, 0.8);
   }
 
   &:nth-child(3) {
-border: 1.5px solid #7AC928;
-background: #7AC928;
-box-shadow: -12px 7px 24px 0px rgba(122, 201, 40, 0.80);
+    border: 1.5px solid #7ac928;
+    background: #7ac928;
+    box-shadow: -12px 7px 24px 0px rgba(122, 201, 40, 0.8);
   }
 
   &:nth-child(4) {
-border: 1.5px solid #FBBC04;
-background: #FBBC04;
-box-shadow: -12px 7px 24px 0px rgba(251, 188, 4, 0.80);
-padding: 8px 5px;
+    border: 1.5px solid #fbbc04;
+    background: #fbbc04;
+    box-shadow: -12px 7px 24px 0px rgba(251, 188, 4, 0.8);
   }
 
   &:nth-child(5) {
-border: 1.5px solid #AF71FF;
-background: #AF71FF;
-box-shadow: -12px 7px 24px 0px rgba(175, 113, 255, 0.80);
+    border: 1.5px solid #af71ff;
+    background: #af71ff;
+    box-shadow: -12px 7px 24px 0px rgba(175, 113, 255, 0.8);
   }
 
   &:nth-child(6) {
-border: 1.5px solid #FF78B6;
-background: #FF78B6;
-box-shadow: -12px 7px 24px 0px rgba(255, 120, 182, 0.80);
+    border: 1.5px solid #ff78b6;
+    background: #ff78b6;
+    box-shadow: -12px 7px 24px 0px rgba(255, 120, 182, 0.8);
   }
-  /* &:hover,
-&:focus {
-} */
 }
 
 .circle-number {
   position: absolute;
   left: -20px;
-top: -20px;
-display: flex;
-justify-content: center;
-align-items: center;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  color: #fff;
   background-color: inherit;
   font-family: Poppins;
   font-size: 20px;
@@ -83,17 +73,20 @@ align-items: center;
 }
 
 .instruction-text {
-  color: #fff;
+  width: 280px;
+  height: 115px;
+  align-items: center;
+  display: flex;
   font-family: Nunito;
   font-size: 15px;
-  padding: 13px 20px;
+  padding: 10px;
 }
 
 .arrow-wrapper {
-display: flex;
-justify-content: space-between;
-width: 192px;
-margin: 0 auto 64px;
+  display: flex;
+  justify-content: space-between;
+  width: 192px;
+  margin: 0 auto 64px;
 }
 
 .arrow-button {
@@ -102,26 +95,100 @@ margin: 0 auto 64px;
   border: none;
 }
 
+.arrow-button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .arrow {
   width: 30px;
   height: 26px;
 }
 
-.arrow-button:hover .arrow {
+.arrow-button:focus .arrow {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 1200px) {
+  .instructions-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 52px;
+    margin: 0 80px 80px;
+  }
 
-/* @media screen and (min-width: 1200px) {
-.arrow-wrapper {
-display: none;
-}
+  .instructions-container .instruction-wrapper {
+    display: block;
+    margin: 0;
+
+    &:nth-child(1):hover {
+      color: #66a5d3;
+    }
+
+    &:nth-child(2):hover {
+      color: #fb9f62;
+    }
+
+    &:nth-child(3):hover {
+      color: #7ac928;
+    }
+
+    &:nth-child(4):hover {
+      color: #fbbc04;
+    }
+
+    &:nth-child(5):hover {
+      color: #af71ff;
+    }
+
+    &:nth-child(6):hover {
+      color: #ff78b6;
+    }
+
+    &:hover {
+      background: white;
+    }
+  }
+
+  .circle-number {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .instruction-wrapper:nth-child(1):hover .circle-number {
+    border: 1px solid #66a5d3;
+  }
+
+  .instruction-wrapper:nth-child(2):hover .circle-number {
+    border: 1px solid #fb9f62;
+  }
+
+  .instruction-wrapper:nth-child(3):hover .circle-number {
+    border: 1px solid #7ac928;
+  }
+
+  .instruction-wrapper:nth-child(4):hover .circle-number {
+    border: 1px solid #fbbc04;
+  }
+
+  .instruction-wrapper:nth-child(5):hover .circle-number {
+    border: 1px solid #af71ff;
+  }
+
+  .instruction-wrapper:nth-child(6):hover .circle-number {
+    border: 1px solid #ff78b6;
+  }
 
   .instruction-text {
-    color: #fff;
-    font-family: Nunito;
-    font-size: 15px;
-    padding: 10px;
-    margin-bottom: 24px;
+    width: 419px;
+    height: 150px;
+    font-size: 24px;
+    padding: 21px 24px;
   }
-} */
+
+  .arrow-wrapper {
+    display: none;
+  }
+}
