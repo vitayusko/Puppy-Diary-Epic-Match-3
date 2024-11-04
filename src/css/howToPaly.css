@@ -4,6 +4,10 @@
   -webkit-background-clip: text;
 }
 
+.howToPlay-container .title-wrapper {
+  margin-bottom: 12px;
+}
+
 .instructions-container {
   display: inline-flex;
   align-items: center;
@@ -13,7 +17,6 @@
   display: none;
   position: relative;
   margin-left: 30px;
-  margin-bottom: 24px;
   border-radius: 15px;
   color: #fff;
 
@@ -109,7 +112,19 @@
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 1199px) {
+  .instructions-container {
+    width: 320px;
+    height: 177px;
+    overflow: hidden;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .howToPlay-container .title-wrapper {
+    margin-bottom: 56px;
+  }
+
   .instructions-container {
     display: flex;
     justify-content: center;
