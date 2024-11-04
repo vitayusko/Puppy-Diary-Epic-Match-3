@@ -1,0 +1,14 @@
+.gameVideo-container .title-wrapper {
+  width: 316px;
+}
+
+.gameVideo-title {
+  color: #fbbc04;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  white-space: nowrap;
+}
+
+.gameVideo-container .title-wrapper svg {
+  flex-shrink: unset;
+}
