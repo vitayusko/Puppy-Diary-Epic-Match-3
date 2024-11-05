@@ -18,19 +18,22 @@
 
 .airplane-wrapper {
   position: absolute;
-  left: 8px;
+  left: 15px;
 }
 
 .game-video-airplane {
-  bottom: 60px;
   position: absolute;
+  width: 128px;
+  top: -26px;
+  cursor: pointer;
 }
 
-.airplane-wrapper .airplane-shadow {
-  margin-left: 18px;
+.title-wrapper .airplane-wrapper .airplane-shadow {
+  margin-left: 10px;
 }
 
 .gameVideo-container .title-wrapper svg {
+  margin: 0 -3px;
   flex-shrink: unset;
 }
 
@@ -132,11 +135,39 @@
     margin: 0 155px;
   }
 
+  .airplane-wrapper {
+    left: -99%;
+    top: -45px;
+    transition: transform 0.3s ease;
+    transform: translate(0, 0);
+
+    &:hover {
+      transform: translate(-20px, 10px);
+    }
+  }
+
+  .game-video-airplane {
+    width: 217px;
+  }
+
+  .title-wrapper .airplane-wrapper .airplane-shadow {
+    margin-left: 58px;
+    margin-top: 55px;
+  }
+
   .span-gameVideo {
     color: #fbbc04;
     font-family: Poppins;
     font-size: 24px;
     font-weight: 700;
     line-height: 150%;
+  }
+
+  .game-video-link {
+    color: #000;
+
+    &:hover {
+      color: #bf391e;
+    }
   }
 }
