@@ -29,3 +29,26 @@ if (mobileMenuButton && closeMenuButton && mobileMenu) {
 
   closeMenuButton.addEventListener('click', closeMenu);
 }
+
+// Download btn
+
+document.getElementById('downloadBtn').onclick = function () {
+  window.open(
+    'https://play.google.com/store/apps/details?id=puppy.diary.puzzle.eliminate.blast.cure.free.android',
+    '_blank'
+  );
+};
+
+document.getElementById('mobMenuDownloadBtn').onclick = function () {
+  window.open(
+    'https://play.google.com/store/apps/details?id=puppy.diary.puzzle.eliminate.blast.cure.free.android',
+    '_blank'
+  );
+};
+
+document.getElementById('headerMobBtnDownload').onclick = function () {
+  window.open(
+    'https://play.google.com/store/apps/details?id=puppy.diary.puzzle.eliminate.blast.cure.free.android',
+    '_blank'
+  );
+};
