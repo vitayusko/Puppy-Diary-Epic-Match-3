@@ -35,6 +35,9 @@
   .word-span {
     display: none;
   }
+  p {
+    margin-top: 32px;
+  }
 }
 .about-vector-mobile-left {
   position: absolute;
@@ -85,6 +88,10 @@
     span {
       font-weight: 700;
       font-size: 24px;
+    }
+    p {
+      margin-top: 56px;
+      margin-bottom: 80px;
     }
   }
 
