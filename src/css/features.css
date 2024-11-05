@@ -144,10 +144,10 @@
 
   .features-list-item {
     width: 451px;
-
+    height: auto;
     flex-shrink: 0;
     white-space: wrap;
-    font-size: 16px;
+    font-size: 24px;
     box-shadow: -12px 7px 24px 0 rgba(219, 132, 33, 0.487);
   }
 
