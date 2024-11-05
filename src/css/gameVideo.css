@@ -6,6 +6,7 @@
 }
 .gameVideo-container .title-wrapper {
   width: 316px;
+  position: relative;
 }
 
 .gameVideo-title {
@@ -15,12 +16,113 @@
   white-space: nowrap;
 }
 
+.airplane-wrapper {
+  position: absolute;
+  left: 15px;
+}
+
+.game-video-airplane {
+  position: absolute;
+  width: 128px;
+  top: -26px;
+  cursor: pointer;
+}
+
+.title-wrapper .airplane-wrapper .airplane-shadow {
+  margin-left: 10px;
+}
+
 .gameVideo-container .title-wrapper svg {
+  margin: 0 -3px;
   flex-shrink: unset;
 }
 
 .gameVideo-container .regular-text {
   text-align: center;
+}
+
+.video-game-character-wrapper {
+  margin-bottom: 64px;
+}
+
+.game-video-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-left: 10px;
+}
+
+.game-video-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bf391e;
+  font-family: Nunito;
+  font-size: 20px;
+}
+
+.game-video-circle {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: #bf391e;
+}
+
+.game-video-arrow {
+  width: 16px;
+  height: 18px;
+  fill: #fff;
+}
+
+.game-video-character {
+  width: 153px;
+  height: 263px;
+}
+
+.download-playstore-game {
+  position: relative;
+}
+
+.video-game-playstore-button {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  display: flex;
+  width: 122px;
+  height: 40px;
+  padding: 5px 10px 5px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background: #fff;
+  box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.video-game-playstore {
+  height: 24px;
+}
+
+.video-google-play {
+  margin-top: 3px;
+  width: 74px;
+  height: 15px;
+}
+
+.get-it-text {
+  color: #000;
+  font-size: 10px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 @media screen and (min-width: 1200px) {
@@ -33,11 +135,63 @@
     margin: 0 155px;
   }
 
+  .airplane-wrapper {
+    left: -99%;
+    top: -45px;
+    transition: transform 0.3s ease;
+    transform: translate(0, 0);
+
+    &:hover {
+      transform: translate(-20px, 10px);
+    }
+  }
+
+  .game-video-airplane {
+    width: 217px;
+  }
+
+  .title-wrapper .airplane-wrapper .airplane-shadow {
+    margin-left: 58px;
+    margin-top: 55px;
+  }
+
   .span-gameVideo {
     color: #fbbc04;
     font-family: Poppins;
     font-size: 24px;
     font-weight: 700;
     line-height: 150%;
+  }
+
+  .game-video-link-wrapper:hover {
+    .game-video-link {
+      color: #bf391e;
+    }
+
+    .game-video-circle {
+      border: 1px solid #fff;
+      background: #bf391e;
+    }
+
+    .game-video-arrow {
+      fill: #fff;
+    }
+  }
+
+  .game-video-link {
+    color: #000;
+  }
+
+  .game-video-circle {
+    border: 1px solid #000;
+    background: #ccc;
+  }
+
+  .game-video-arrow {
+    fill: #000;
+  }
+
+  .video-game-character-wrapper {
+    margin-bottom: 80px;
   }
 }
