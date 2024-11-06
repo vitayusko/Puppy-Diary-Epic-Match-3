@@ -42,6 +42,12 @@ if (mobileMenuButton && closeMenuButton && mobileMenu) {
   closeMenuButton.addEventListener('click', closeMenu);
 }
 
+const mobileMenuLinks = document.querySelectorAll('.nav-item-link-mob');
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
 // Download btn
 
 document.getElementById('downloadBtn').onclick = function () {
