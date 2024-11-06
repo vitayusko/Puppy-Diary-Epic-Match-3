@@ -51,7 +51,7 @@
 }
 .about-vector-dt-left {
   position: absolute;
-  top: 15%;
+  top: 12%;
   left: 16%;
   transform: translate(-50%, -50%);
   width: 418px;
@@ -59,7 +59,7 @@
 }
 .about-vector-dt-right {
   position: absolute;
-  top: 15%;
+  top: 12%;
   right: -20%;
   transform: translate(-50%, -50%);
   width: 418px;

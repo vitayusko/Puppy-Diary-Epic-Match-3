@@ -133,7 +133,7 @@
     position: absolute;
     top: -20px;
     transform: translate(635%);
-    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+    transition: transform 0.3s ease, top 0.3s ease;
   }
 
   .features-img-dt:hover {
