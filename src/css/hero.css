@@ -108,6 +108,7 @@
   position: absolute;
   top: -10px;
   left: 50%;
+  /* left: 612px; */
   transform: translateX(-50%);
   text-align: center;
   z-index: 1;
@@ -295,7 +296,7 @@
     transition: opacity 0.2s ease;
   }
 
-  .img-hero-girl-black-wrapper {
+  /* .img-hero-girl-black-wrapper {
     opacity: 1;
     z-index: 2;
   }
@@ -311,6 +312,28 @@
 
   .img-container-hero:hover .img-hero-girl-collor-wrapper {
     opacity: 1;
+  } */
+
+  /* Изначальное состояние */
+  .img-hero-girl-black-wrapper {
+    opacity: 1; /* Черно-белое изображение видно */
+    z-index: 2; /* Оно сверху */
+    transition: opacity 0.5s ease; /* Плавный переход при наведении */
+  }
+
+  .img-hero-girl-collor-wrapper {
+    opacity: 0; /* Цветное изображение скрыто */
+    z-index: 1; /* Оно под черно-белым */
+    transition: opacity 0.5s ease; /* Плавный переход при наведении */
+  }
+
+  /* Анимация при наведении на .img-wrapper */
+  .img-wrapper:hover .img-hero-girl-black-wrapper {
+    opacity: 0; /* Черно-белое изображение исчезает */
+  }
+
+  .img-wrapper:hover .img-hero-girl-collor-wrapper {
+    opacity: 1; /* Цветное изображение появляется */
   }
 
   .img-hero-btf2 {
@@ -421,5 +444,8 @@
 
   .header-mob-btn-download {
     top: 180px;
+  }
+  .img-container-hero {
+    left: 612px;
   }
 }
