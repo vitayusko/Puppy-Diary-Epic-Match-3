@@ -112,6 +112,11 @@
   transform: scale(1.1);
 }
 
+.howToPlay-container .title-wrapper .line-small {
+  height: 4px;
+  width: 65px;
+}
+
 @media screen and (max-width: 1199px) {
   .instructions-container {
     width: 320px;
@@ -205,5 +210,73 @@
 
   .arrow-wrapper {
     display: none;
+  }
+
+  @keyframes smoothColorCycle {
+    0%,
+    100% {
+      background-image: linear-gradient(90deg, #d76796, #fb9f62);
+    }
+    14.29% {
+      background-image: linear-gradient(90deg, #66a5d3, #66a5d3);
+    }
+    28.58% {
+      background-image: linear-gradient(90deg, #fb9f62, #fb9f62);
+    }
+    42.87% {
+      background-image: linear-gradient(90deg, #7ac928, #7ac928);
+    }
+    57.16% {
+      background-image: linear-gradient(90deg, #fbbc04, #fbbc04);
+    }
+    71.45% {
+      background-image: linear-gradient(90deg, #af71ff, #af71ff);
+    }
+    85.74% {
+      background-image: linear-gradient(90deg, #ff78b6, #ff78b6);
+    }
+  }
+
+  .howToPlay-title {
+    background-image: linear-gradient(90deg, #d76796 0%, #fb9f62 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: smoothColorCycle 11s infinite;
+    display: inline-block;
+  }
+
+  @keyframes lineColorCycle {
+    0%,
+    100% {
+      fill: linear-gradient(90deg, #d76796 0%, #fb9f62 100%);
+    }
+    14.29% {
+      fill: #66a5d3;
+    }
+    28.58% {
+      fill: #fb9f62;
+    }
+    42.87% {
+      fill: #7ac928;
+    }
+    57.16% {
+      fill: #fbbc04;
+    }
+    71.45% {
+      fill: #af71ff;
+    }
+    85.74% {
+      fill: #ff78b6;
+    }
+  }
+
+  .howToPlay-container .title-wrapper .line-large {
+    width: 440px;
+    max-width: 440px;
+  }
+
+  .howToPlay-container .title-wrapper .line-large path {
+    animation: lineColorCycle 11s infinite;
   }
 }

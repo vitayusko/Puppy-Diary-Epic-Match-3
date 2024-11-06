@@ -8,6 +8,18 @@ var swiper = new Swiper('.mySwiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  slideToClickedSlide: true,
+  watchSlidesProgress: true,
+});
+
+swiper.on('click', function (swiper, event) {
+  var clickedSlide = event.target.closest('.swiper-slide');
+  if (clickedSlide) {
+    var clickedIndex = Array.from(swiper.slides).indexOf(clickedSlide);
+    if (clickedIndex !== swiper.activeIndex) {
+      swiper.slideTo(clickedIndex);
+    }
+  }
 });
 
 // Mobile menu work
