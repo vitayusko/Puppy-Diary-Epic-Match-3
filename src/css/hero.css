@@ -53,12 +53,10 @@
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  /* Центрирование кнопки по горизонтали и вертикали */
   position: absolute;
   top: 90px;
-  /* left: 50%; */
-  /* transform: translate(-50%, -500%); */
-  z-index: 10; /* Устанавливаем z-index на 10 для слоя кнопки */
+
+  z-index: 2;
 
   .btn-download-wrapper {
     display: flex;
