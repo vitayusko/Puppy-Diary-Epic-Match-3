@@ -24,9 +24,34 @@ swiper.on('click', function (swiper, event) {
 
 // Mobile menu work
 
+// const mobileMenuButton = document.querySelector('.mobile-menu-btn');
+// const closeMenuButton = document.querySelector('.close-menu-btn');
+// const mobileMenu = document.querySelector('.mobile-menu-bg');
+
+// if (mobileMenuButton && closeMenuButton && mobileMenu) {
+//   const openMenu = () => {
+//     mobileMenu.classList.add('is-open');
+//   };
+
+//   const closeMenu = () => {
+//     mobileMenu.classList.remove('is-open');
+//   };
+
+//   mobileMenuButton.addEventListener('click', openMenu);
+
+//   closeMenuButton.addEventListener('click', closeMenu);
+
+//   const mobileMenuLinks = document.querySelectorAll('.nav-item-link-mob');
+
+//   mobileMenuLinks.forEach(link => {
+//     link.addEventListener('click', closeMenu);
+//   });
+// }
+
 const mobileMenuButton = document.querySelector('.mobile-menu-btn');
 const closeMenuButton = document.querySelector('.close-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu-bg');
+const mobileMenuLinks = document.querySelectorAll('.nav-item-link-mob');
 
 if (mobileMenuButton && closeMenuButton && mobileMenu) {
   const openMenu = () => {
@@ -38,15 +63,13 @@ if (mobileMenuButton && closeMenuButton && mobileMenu) {
   };
 
   mobileMenuButton.addEventListener('click', openMenu);
-
   closeMenuButton.addEventListener('click', closeMenu);
+
+  // Закрыть меню
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
 }
-
-const mobileMenuLinks = document.querySelectorAll('.nav-item-link-mob');
-
-mobileMenuLinks.forEach(link => {
-  link.addEventListener('click', closeMenu);
-});
 
 // Download btn
 
