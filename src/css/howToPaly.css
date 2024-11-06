@@ -167,7 +167,8 @@
     }
 
     &:hover {
-      background: white;
+      background: #fff;
+      box-shadow: none;
     }
   }
 
@@ -175,6 +176,10 @@
     width: 56px;
     height: 56px;
     font-size: 24px;
+  }
+
+  .instructions-container .instruction-wrapper:hover .circle-number {
+    font-size: 30px;
   }
 
   .instruction-wrapper:nth-child(1):hover .circle-number {
