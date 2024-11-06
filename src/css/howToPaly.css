@@ -112,6 +112,11 @@
   transform: scale(1.1);
 }
 
+.howToPlay-container .title-wrapper .line-small {
+  height: 4px;
+  width: 65px;
+}
+
 @media screen and (max-width: 1199px) {
   .instructions-container {
     width: 320px;
