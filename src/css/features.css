@@ -11,6 +11,11 @@
     line-height: normal;
   }
 }
+#features {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
 .features-list-wrapper {
   overflow: hidden;
 }

@@ -28,6 +28,7 @@ const mobileMenuButton = document.querySelector('.mobile-menu-btn');
 const closeMenuButton = document.querySelector('.close-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu-bg');
 const mobileMenuLinks = document.querySelectorAll('.nav-item-link-mob');
+const header = document.querySelector('.header');
 
 let scrollPosition = 0;
 
@@ -37,7 +38,7 @@ if (mobileMenuButton && closeMenuButton && mobileMenu) {
 
     document.body.style.position = 'fixed';
     document.body.style.top = `-${scrollPosition}px`;
-    document.body.style.width = '100%'; // Чтобы избежать смещения
+    document.body.style.width = '100%';
 
     mobileMenu.classList.add('is-open');
   };
@@ -56,9 +57,48 @@ if (mobileMenuButton && closeMenuButton && mobileMenu) {
   closeMenuButton.addEventListener('click', closeMenu);
 
   mobileMenuLinks.forEach(link => {
-    link.addEventListener('click', closeMenu);
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      closeMenu();
+
+      const targetId = link.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        const headerHeight = header.offsetHeight;
+        const targetPosition =
+          targetElement.getBoundingClientRect().top +
+          window.pageYOffset -
+          headerHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth',
+        });
+      }
+    });
   });
 }
+
+// anchor-offset
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = 70;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  });
+});
 
 // Download btn
 
